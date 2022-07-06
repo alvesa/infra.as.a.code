@@ -2,14 +2,11 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "location": {
-      "value": ""
-    },
     "apim": {
       "value": {
         "name" : "",
         "sku" : {
-          "capacity" : 0,
+          "capacity" : 1,
           "name": ""
         },
         "properties": {
@@ -17,6 +14,32 @@
           "publisherName": ""
         }
       }
+    },
+    "api": {
+      "value": {
+        "name": "",
+        "versionSet": {
+          "version": "",
+          "properties": {
+            "displayName": "",
+            "versionHeaderName": "",
+            "versioningScheme": ""
+          },
+          "revisionNumber": 1
+        }
+      }
+    },
+    "apiService": {
+      "value": {
+        "properties": {
+          "path": ""
+        }
+      }
+    },
+    "products": {
+      "value": [
+        "","",""
+      ]
     }
   }
 }
